@@ -1,0 +1,118 @@
+body, html {
+    background: #000000;
+    min-height: 100vh;
+    min-width: 100%;
+    padding: 0 0;
+    margin: 0;
+    font-size: 16px;
+}
+body {
+    font-family: 'Montserrat', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}
+.light-font {
+    font-weight: 300;
+}
+.regular-font {
+    font-weight: 500;
+}
+.medium-font {
+    font-weight: 700;
+}
+.bold-font {
+    font-weight: 900;
+}
+
+#homeFirstVP{
+    background-size: cover;
+    min-height: 100vh;
+    min-width: 100%;
+    z-index: 2;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    border-bottom: 5px solid #FFDD5D;
+}
+#homeFirstVP #hero {
+    text-align: center;
+    max-width: 800px;
+    font-weight: 500;
+}
+#homeFirstVP #hero h1 {
+    font-size: 6rem;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 4rem;
+    text-shadow: rgba(0,0,0,0.8) 0 0 10px;
+}
+#homeFirstVP #hero h1 span.light-font {
+    font-size: 4rem;
+    line-height: 4rem;
+}
+#homeFirstVP #hero h2 {
+    font-size: 2rem;
+    color: #FFDD5D;
+}
+#homeSecondVP{
+    background: pink;
+    background-size: cover;
+    min-height: 100vh;
+    min-width: 100%;
+    z-index: 2;
+    position: relative;
+}
+#homeFirstVPBkgrdVid{
+    min-height: 100%;
+    min-width: 100%;
+    overflow-y: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    opacity: 0.5;
+}
+
+/* ------ buttons --------------- */
+.btn {
+    height: 30px;
+    font-size: .75rem;
+    line-height: 30px;
+    min-width: 300px;
+    border-radius: 5px;
+    font-weight: 900;
+    background: #FFFFFF;
+    text-transform: uppercase;
+    margin: 10px 10px 0 10px;
+}
+.cta-btn {
+    background: #F9521D;
+    color: #FFF;
+}
+.scnd-btn {
+    background: #FFF;
+    color: #5A94AD;
+}
+/* ------ large screens --------- */
+@media screen and (min-width: 2100px) {
+    body{
+        font-size: 18px;
+    }
+}
+
+/* ------- mobile screens --------- */
+@media screen and (max-width: 468px){
+    #homeFirstVP #hero h1 {
+        font-size: 3rem;
+        line-height: 2rem;
+    }
+    #homeFirstVP #hero h1 span.light-font {
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+    #homeFirstVP #hero h2 {
+        font-size: 1rem;
+        line-height: 1.25rem;
+    }
+}
