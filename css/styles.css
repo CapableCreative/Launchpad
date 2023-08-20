@@ -18,8 +18,12 @@ b {
 }
 a {
     color: #FFF;
+    text-decoration: none;
 }
-h1 {
+img {
+    max-width: 100%;
+}
+h2.headline {
     color: #FFFFFF;
     font-weight: 900;
     font-size: 3rem;
@@ -28,6 +32,7 @@ h1 {
     padding-bottom: 20px;
 }
 p, ul, a {
+    color: #FFDD5D;
     font-size: 1.25rem;
     line-height: 1.75rem;
 }
@@ -186,14 +191,13 @@ nav {
     color: #FFDD5D;
 }
 #homeSecondVPFirst{
-    background: #000000 url(../img/people.png) no-repeat;
-    background-position: right center;
-    background-size: contain;
     min-width: 100%;
     z-index: 2;
     position: relative;
     border-bottom: 5px solid #FFDD5D;
-    padding-top: 100px;
+}
+#homeSecondVPSecond {
+    background: #2B2B2B;
 }
 #homeSecondVP ul {
     color: #FFDD5D;
@@ -224,13 +228,18 @@ footer {
 .btn {
     height: 2.5rem;
     font-size: 1.25rem;
-    line-height: 2rem;
+    line-height: 1.5rem;
     min-width: 300px;
     border-radius: 5px;
     font-weight: 900;
     background: #FFFFFF;
     text-transform: uppercase;
     margin: 10px 10px 0 10px;
+    transition: background .25s ease .25s;
+}
+.btn:hover {
+    background: #FFDD5D;
+    color: #2B2B2B;
 }
 .cta-btn {
     background: #F9521D;
