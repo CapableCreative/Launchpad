@@ -5,23 +5,49 @@
         <title>Launchpad Developers &ndash; Senior-level develpers available on demand</title>
         <meta name="description" content="Our first page">
         <meta name="keywords" content="html tutorial template">
-      
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="css/styles.css" />
+        <link rel="stylesheet" type="text/css" href="css/float.css" />
         <link rel="stylesheet" type="text/css" href="css/reset.css" />
+        <link rel="stylesheet" type="text/css" href="css/styles.css" />
         <meta name="viewport" content="width=device-width,initial-scale=1">
+        <script src="js/float.js"></script>
     </head>
     <body>
+        <section id="nav">
+            <div class="medium-width">
+                <nav>
+                    <ul>
+                        <li id="main-brand"><img src="svg/launchpad-logo.svg"></li>
+                        <span id="mainNavLinks">
+                            <li><a href="">Let's Talk</a></li>
+                        </span>
+                    </ul>
+                </nav>
+            </div>
+        </section>
         <section id="homeFirstVP">
-            <div id="hero">
-                <h1 class="headline">Tech Talent<br/><span class="light-font">On Demand</span></h1>
-                <h2 class="hero-body">Delivering technical resources at the project, team and individual level.
-                    Launch Your Workforce
-                </h2>
-                <button class="scnd-btn btn">Our Process</button>
-                <button class="cta-btn btn">Schedule a meeting</button>
+            <div class="medium-width">
+                <div id="hero">
+                    <div id="heroText">
+                        <h1 class="headline">Tech Talent<br/><span class="light-font">On Demand</span></h1>
+                        <h2 class="hero-body">Delivering technical resources at the project, team and individual level.
+                            Launch Your Workforce
+                        </h2>
+                        <br/>
+                        <button class="scnd-btn btn">Our Process</button>
+                        <button class="cta-btn btn">Schedule a meeting</button>
+                    </div>
+                    <div id="heroIconRow" class="two-column-mbl row">
+                        <img src="svg/apps.svg" />
+                        <img src="svg/portals.svg" />
+                        <img src="svg/uiux.svg" />
+                        <img src="svg/websites.svg" />
+                        <img src="svg/branding.svg" />
+                        <img src="svg/apps.svg" />
+                    </div>
+                </div>
             </div>
         </section>
         <section id="homeFirstVPBkgrd">
@@ -30,8 +56,26 @@
                 <source src="vid/appDevBkgrd-opt.mov" type="video/mp4">
               </video>
         </section>
-        <section id="homeSecondVP">
-            
+        <section id="homeSecondVP" class="">
+            <div id="homeSecondVPFirst" class="half-div mobile-full">
+                <h1 class="headline">Start Building Your Team</h1>
+                <ul class="list-style">
+                    <li><b>Staff augmentation</b><br/>
+                    Highly skilled resources ready to contract today. Teams or individuals. We have a custom staff augmentation solution to fit your specific needs.</li>
+                    <li><b>Consulting<br/></b>
+                    Our seasoned principals and architects help you create a transformation or project roadmap. Our teams put it into action. End-to-end project.</li>
+                </ul>
+            </div>
+            <div class="half-div mobile-full">
+                <img src="img/devices.png">
+            </div>
+            <div class="half-div mobile-full">
+                <h1 class="headline">Start Building Your Team</h1>
+                <div class="list-style">
+                    <b>Staff augmentation</b><br/>
+                    Highly skilled resources ready to contract today. Teams or individuals. We have a custom staff augmentation solution to fit your specific needs.
+                </div>
+            </div>
         </section>
     </body>
 </html>
