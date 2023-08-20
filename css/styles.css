@@ -57,7 +57,12 @@ section, .medium-width {
     flex-basis: 100%;
     align-items: center;
 }
-.half-div {
+.full-width {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.half-width {
     display: flex;
     flex-basis: 50%;
     flex-direction: column;
@@ -172,6 +177,10 @@ nav {
     font-size: 4rem;
     line-height: 4rem;
 }
+#homeSecondVP{
+    display: flex;
+    scroll-snap-align: start;
+}
 #homeFirstVP #hero h2 {
     font-size: 2rem;
     color: #FFDD5D;
@@ -183,8 +192,8 @@ nav {
     min-width: 100%;
     z-index: 2;
     position: relative;
-    scroll-snap-align: start;
     border-bottom: 5px solid #FFDD5D;
+    padding-top: 100px;
 }
 #homeSecondVP ul {
     color: #FFDD5D;
@@ -208,7 +217,9 @@ nav {
     z-index: 1;
     opacity: 0.5;
 }
-
+footer {
+    scroll-snap-align: start;
+}
 /* ------ buttons --------------- */
 .btn {
     height: 2.5rem;
