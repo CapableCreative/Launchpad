@@ -343,6 +343,7 @@ footer p, footer a {
 @media (min-width: 1400px){
     .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
         max-width: 1700px;
+        width: 90%;
     }
 }
 @media screen and (max-width: 1200px) {
