@@ -27,47 +27,49 @@
                 </nav>
             </div>
         </section>
-        <section id="homeFirstVP">
-            <div class="medium-width">
-                <div id="hero">
-                    <div id="heroText">
-                        <h1 class="headline">Tech Talent<br/><span class="light-font">On Demand</span></h1>
-                        <h2 class="hero-body">Delivering technical resources at the project, team and individual level.
-                            Launch Your Workforce
-                        </h2>
-                        <br/>
-                        <button class="scnd-btn btn">Our Process</button>
-                        <button class="cta-btn btn">Schedule a meeting</button>
-                    </div>
-                    <div id="heroIconRow" class="two-column-mbl row">
-                        <img src="svg/apps.svg" />
-                        <img src="svg/portals.svg" />
-                        <img src="svg/uiux.svg" />
-                        <img src="svg/websites.svg" />
-                        <img src="svg/serverside.svg" />
-                        <img src="svg/QA.svg" />
-                    </div>
+        <section id="homeFirstVP" class="container-fluid home-page">
+            
+            <div id="hero" class="container">
+                <div id="heroText" class="row">
+                    <h1 class="headline col-md-12">Tech Talent<br/><span class="light-font">On Demand</span></h1>
+                    <h2 class="hero-body col-md-12">Delivering technical resources at the project, team and individual level.
+                        Launch Your Workforce
+                    </h2>
+                </div>
+                <div class="row btn-row">
+                    <a class="scnd-btn btn col-md-6 col-sm-12" href="#clientsList">Our Clients</a>
+                    <a class="cta-btn btn col-md-6 col-sm-12">Schedule a meeting</a>
+                </div>
+                <div id="heroIconRow" class="row">
+                    <img src="svg/apps.svg" class="service-icon col-lg-2 col-md-4 col-sm-6"/>
+                    <img src="svg/portals.svg"  class="service-icon col-lg-2 col-md-4 col-sm-6"/>
+                    <img src="svg/uiux.svg" class="service-icon col-lg-2 col-md-4 col-sm-6"/>
+                    <img src="svg/websites.svg" class="service-icon col-lg-2 col-md-4 col-sm-6"/>
+                    <img src="svg/serverside.svg" class="service-icon col-lg-2 col-md-4 col-sm-6"/>
+                    <img src="svg/QA.svg" class="service-icon col-lg-2 col-md-4 col-sm-6"/>
                 </div>
             </div>
+           
         </section>
-        <section id="homeFirstVPBkgrd">
-            <video playsinline autoplay muted loop poster="img/poster.jpg" id="homeFirstVPBkgrdVid">
+        <section id="homeFirstVPBkgrd" class="home-page container-fluid">
+            <video playsinline autoplay muted loop poster="img/poster.png" id="homeFirstVPBkgrdVid">
                 <source src="vid/appDevBkgrd-opt.mov" type="video/webm">
                 <source src="vid/appDevBkgrd-opt.mov" type="video/mp4">
-              </video>
+            </video>
         </section>
-        <section id="homeSecondVP" class="">
+        <section id="homeSecondVP" class="home-page">
             <div id="homeSecondVPFirst" class="container-fluid">
                 <div class="container">
-                    <div class="row">
-                        <div class="col-lg-6 col-md-12 section-text">
+                    <div class="row section-text">
+                        <div class="col-lg-6 col-md-12">
                             <h2 class="headline">Start Building Your Team</h2>
                             <ul class="list-style">
-                            <li><b>Staff augmentation</b><br/>
-                            Highly skilled resources ready to contract today. Teams or individuals. We have a custom staff augmentation solution to fit your specific needs.</li>
-                            <li><b>Consulting<br/></b>
-                            Our seasoned principals and architects help you create a transformation or project roadmap. Our teams put it into action. End-to-end project.</li>
-                        </ul>
+                                <li><b>STAFF AUGMENTATION</b> &ndash;
+                                Highly skilled resources ready to contract today. Teams or individuals. We have a custom staff augmentation solution to fit your specific needs.</li>
+                                <li><b>CONSULTING</b> &ndash;
+                                Our seasoned principals and architects help you create a transformation or project roadmap. Our teams put it into action. End-to-end project.</li>
+                            </ul>
+                            <a class="cta-btn btn col-md-6 col-sm-12">Schedule a meeting</a>
                         </div>
                         <div class="col-lg-6 col-md-12" style="padding: 0 0 0 0;">
                             <img src="img/people.png" />
@@ -77,9 +79,9 @@
             </div>
             <div id="homeSecondVPSecond" class="container-fluid">
                 <div class="container">
-                    <div class="medium-width row">
-                        <div class="col-lg-6 col-md-12">
-                            <img src="img/devices.png">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-12" style="display:flex; flex-wrap:wrap;">
+                            <img class="padded-img" src="img/devices.png">
                         </div>
                         <div class="col-lg-6 col-md-12 section-text">
                             <h2 class="headline">Results That Matter</h2>
@@ -90,8 +92,48 @@
                                     <li><b>TOP TIER TALENT</b> &ndash; The best resources ready when you need them.</li>
                                     <li><b>15+ YEAR HISTORY</b> &ndash; Trusted partner for solving complex challenges.</li>
                                 </ul>
+                                <a class="cta-btn btn col-md-6 col-sm-12">Schedule a meeting</a>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <anchor id="clientsList"></anchor>
+        <section id="iconsRow" class="home-page container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col horiz-line"></div>
+                    <h2 class="col headline">Clients</h2>
+                    <div class="col horiz-line"></div>
+                </div>
+                <div class="row icons-row">
+                    <div class="col-md-4 client-icon">
+                        <img src="/img/clients/aramark.png" />
+                    </div>
+                    <div class="col-md-4 client-icon">
+                        <img src="/img/clients/charter.png" />
+                    </div>
+                    <div class="col-md-4 client-icon">
+                        <img src="/img/clients/cie.png" />
+                    </div>
+                    <div class="col-md-4 client-icon">
+                        <img src="/img/clients/frss.png" />
+                    </div>
+                    <div class="col-md-4 client-icon">
+                        <img src="/img/clients/kpa.png" />
+                    </div>
+                    <div class="col-md-4 client-icon">
+                        <img src="/img/clients/nevro.png" />
+                    </div>
+                    <div class="col-md-4 client-icon">
+                        <img src="/img/clients/qrypt.png" />
+                    </div>
+                    <div class="col-md-4 client-icon">
+                        <img src="/img/clients/surge.png" />
+                    </div>
+                    <div class="col-md-4 client-icon">
+                        <img src="/img/clients/topdevs.png" />
                     </div>
                 </div>
             </div>
@@ -103,7 +145,7 @@
                     <div class="col horiz-line"></div>
                 </div>
                 <div class="row">
-                    <div class="col-3 footer-links footer-links-1">
+                    <div class="col-md-3 footer-links footer-links-1">
                         <h3>Contact</h3>
                         <p>
                             Launchpad Developers<br/>

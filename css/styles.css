@@ -7,6 +7,7 @@ body, html {
     font-size: 16px;
     overflow-y: scroll;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 body {
     font-family: 'Montserrat', 'Helvetica Neue', Arial, Helvetica, sans-serif;
@@ -22,6 +23,9 @@ a {
 }
 img {
     max-width: 100%;
+}
+.padded-img {
+    padding: 20px;
 }
 h2.headline {
     color: #FFFFFF;
@@ -201,7 +205,6 @@ nav {
     min-width: 100%;
     z-index: 2;
     position: relative;
-    border-bottom: 5px solid #FFDD5D;
 }
 #homeSecondVPFirst .col-md-12 {
     align-content: center;
@@ -238,10 +241,35 @@ nav {
     z-index: 1;
     opacity: 0.5;
 }
+#iconsRow {
+    text-align: center;
+    min-height: 33vh;
+    padding: 50px;
+}
+.icons-row .client-icon {
+    height: 100px;
+    padding: 30px;
+    opacity: 0.5;
+}
+
+
 footer {
     scroll-snap-align: start;
 }
 /* ------ buttons --------------- */
+.btn-row {
+    max-width: 800px;
+    margin: 0 auto;
+    justify-content: center;
+}
+.btn-row .btn {
+    margin: 10px;
+    max-width: 291px;
+    flex-direction: row;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
 .btn {
     height: 2.5rem;
     font-size: 1.25rem;
@@ -251,7 +279,7 @@ footer {
     font-weight: 900;
     background: #FFFFFF;
     text-transform: uppercase;
-    margin: 10px 10px 0 10px;
+    margin: 10px 0 0 0;
     transition: all .25s ease .25s;
 }
 .btn:hover {
@@ -266,17 +294,24 @@ footer {
     background: #FFF;
     color: #5A94AD;
 }
+
+#clientsList {
+    position: relative;
+    top: -6 0px;
+}
+#iconsRow {
+    border-bottom: 5px solid #FFDD5D;
+}
 footer {
     min-height: 400px;
     background: #999;
-    border-top: 5px #000 solid;
     padding:40px;
 }
 footer img.footer-logo-icon {
     max-width: 50px;
     height: auto;
 }
-footer .horiz-line {
+.horiz-line {
     width: 100%;
     height: 1px;
     background-color: #CCC;
@@ -305,15 +340,17 @@ footer p, footer a {
         margin-top: 20px;
     }
 }
+@media (min-width: 1400px){
+    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        max-width: 1700px;
+    }
+}
 @media screen and (max-width: 1200px) {
     body {
         scroll-snap-align: none;
     }
     #homeFirstVP #hero #heroIconRow img{
-        max-width: 180px;
         margin-top: 20px;
-        display: flex;
-        flex-basis: 33%;
     }
     #homeFirstVP{
         scroll-snap-align: none;
@@ -329,14 +366,24 @@ footer p, footer a {
     body {
         scroll-snap-align: none;
     }
-    #homeFirstVP #hero #heroIconRow img{
-        max-width: 150px;
-        margin-top: 20px;
-        display: flex;
-        flex-basis: 33%;
+    #homeFirstVP {
+        padding-top: 100px;
+    }
+    #homeFirstVP #hero h1 {
+        font-size: 5rem;
+    }
+    .section-text, .section-text a.btn {
+        text-align: center;
+        margin: 0 auto;
+    }
+    .home-page p, .home-page ul.list-style, .home-page ul li {
+        text-align: center;
+        padding: 5px 15px;
+        list-style: none;
     }
 }
 @media screen and (max-width: 800px) {
+
     #homeFirstVP #hero h1 {
         font-size: 4rem;
         line-height: 3.5rem;
@@ -358,6 +405,10 @@ footer p, footer a {
     #nav nav #main-brand, nav img {
         max-width: 150px;
     }
+    .headline {
+        text-align: center;
+    }
+
 }
 /* ------- mobile screens --------- */
 @media screen and (max-width: 600px){
@@ -374,9 +425,6 @@ footer p, footer a {
     body, section, #homeFirstVP {
         height:fit-content;
         min-height: none;
-    }
-    #heroText {
-        padding: 80px 40px 0;
     }
     #homeFirstVP #hero h1 span.light-font {
         font-size: 2.5rem;
