@@ -341,6 +341,45 @@ footer p, footer a {
   .modal-body {
     font-weight: 500;
   }
+
+  .service-icon {
+    opacity: 1.0;
+    position: relative;
+    top: 0;
+    transition: all 2s ease .15s;
+}
+
+
+.service-icon.animated-icon {
+    opacity: 0.0;
+    position: relative;
+    top: 100px;
+    transition: all .2s ease .15s;
+}
+
+.animate-me {
+    opacity: 1.0;
+    position: relative;
+    left: 0;
+    transition: all 1.5s ease .15s;
+}
+
+.animate-me.animated-slide-right {
+    opacity: 0.0;
+    position: relative;
+    left: -50%;
+    transition: all 1.5s ease .15s;
+}
+
+.animate-me.animated-slide-left {
+    opacity: 0.0;
+    position: relative;
+    left: 50%;
+    transition: all 1.5s ease .15s;
+}
+
+
+
 /* ------ large screens --------- */
 @media screen and (min-width: 2100px) {
     body{
@@ -457,41 +496,3 @@ footer p, footer a {
         border-bottom: 5px solid #FFDD5D;
     }
 }
-
-.service-icon {
-    opacity: 1.0;
-    position: relative;
-    top: 0;
-    transition: all 2s ease .15s;
-}
-
-
-.service-icon.animated-icon {
-    opacity: 0.0;
-    position: relative;
-    top: 100px;
-    transition: all .2s ease .15s;
-}
-
-.animate-me {
-    opacity: 1.0;
-    position: relative;
-    left: 0;
-    transition: all 1.5s ease .15s;
-}
-
-.animate-me.animated-slide-right {
-    opacity: 0.0;
-    position: relative;
-    left: -50%;
-    transition: all 1.5s ease .15s;
-}
-
-.animate-me.animated-slide-left {
-    opacity: 0.0;
-    position: relative;
-    left: 50%;
-    transition: all 1.5s ease .15s;
-}
-
-
