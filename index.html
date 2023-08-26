@@ -13,6 +13,9 @@
         <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" />
         <link rel="stylesheet" type="text/css" href="css/styles.css" />
         <meta name="viewport" content="width=device-width,initial-scale=1">
+        <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     </head>
     <body>
         <section id="nav">
@@ -21,7 +24,7 @@
                     <ul>
                         <li id="main-brand"><img src="svg/launchpad-logo.svg"></li>
                         <span id="mainNavLinks">
-                            <li><a href="">Let's Talk</a></li>
+                            <li><span data-toggle="modal" data-target="#scheduleModal">Let's Talk</span></li>
                         </span>
                     </ul>
                 </nav>
@@ -32,21 +35,21 @@
             <div id="hero" class="container">
                 <div id="heroText" class="row">
                     <h1 class="headline col-md-12">Tech Talent<br/><span class="light-font">On Demand</span></h1>
-                    <h2 class="hero-body col-md-12">Delivering technical resources at the project, team and individual level.
-                        Launch Your Workforce
+                    <h2 class="hero-body col-md-12">Delivering technical resources at the project, team, and individual level.<br/>
+                        <span style="font-weight:700; line-height:3rem;">LAUNCH YOUR WORKFORCE.</b>
                     </h2>
                 </div>
                 <div class="row btn-row">
                     <a class="scnd-btn btn col-md-6 col-sm-12" href="#clientsList">Our Clients</a>
-                    <a class="cta-btn btn col-md-6 col-sm-12">Schedule a meeting</a>
+                    <button type="button" class="btn cta-btn" data-toggle="modal" data-target="#scheduleModal">Schedule a Meeting</button>
                 </div>
                 <div id="heroIconRow" class="row">
-                    <img src="svg/apps.svg" class="service-icon col-lg-2 col-md-4 col-sm-6"/>
-                    <img src="svg/portals.svg"  class="service-icon col-lg-2 col-md-4 col-sm-6"/>
-                    <img src="svg/uiux.svg" class="service-icon col-lg-2 col-md-4 col-sm-6"/>
-                    <img src="svg/websites.svg" class="service-icon col-lg-2 col-md-4 col-sm-6"/>
-                    <img src="svg/serverside.svg" class="service-icon col-lg-2 col-md-4 col-sm-6"/>
-                    <img src="svg/QA.svg" class="service-icon col-lg-2 col-md-4 col-sm-6"/>
+                    <img src="svg/apps.svg" class="service-icon animated-icon col-lg-2 col-md-4 col-sm-6"/>
+                    <img src="svg/portals.svg"  class="service-icon animated-icon col-lg-2 col-md-4 col-sm-6"/>
+                    <img src="svg/uiux.svg" class="service-icon animated-icon col-lg-2 col-md-4 col-sm-6"/>
+                    <img src="svg/websites.svg" class="service-icon animated-icon col-lg-2 col-md-4 col-sm-6"/>
+                    <img src="svg/serverside.svg" class="service-icon animated-icon col-lg-2 col-md-4 col-sm-6"/>
+                    <img src="svg/QA.svg" class="service-icon animated-icon col-lg-2 col-md-4 col-sm-6"/>
                 </div>
             </div>
            
@@ -61,7 +64,7 @@
             <div id="homeSecondVPFirst" class="container-fluid">
                 <div class="container">
                     <div class="row section-text">
-                        <div class="col-lg-6 col-md-12">
+                        <div class="col-lg-6 col-md-12 animate-me animated-slide-right">
                             <h2 class="headline">Start Building Your Team</h2>
                             <ul class="list-style">
                                 <li><b>STAFF AUGMENTATION</b> &ndash;
@@ -69,9 +72,9 @@
                                 <li><b>CONSULTING</b> &ndash;
                                 Our seasoned principals and architects help you create a transformation or project roadmap. Our teams put it into action. End-to-end project.</li>
                             </ul>
-                            <a class="cta-btn btn col-md-6 col-sm-12">Schedule a meeting</a>
+                            <button class="cta-btn btn col-md-6 col-sm-12 animated-slide-left" data-toggle="modal" data-target="#scheduleModal">Schedule a meeting</button>
                         </div>
-                        <div class="col-lg-6 col-md-12" style="padding: 0 0 0 0;">
+                        <div class="col-lg-6 col-md-12 animate-me animated-slide-left" style="padding: 0 0 0 0;">
                             <img style="max-width: 500px;" src="img/people.png" />
                         </div>
                     </div>
@@ -80,10 +83,10 @@
             <div id="homeSecondVPSecond" class="container-fluid">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-6 col-md-12" style="display:flex; flex-wrap:wrap;">
+                        <div class="col-lg-6 col-md-12 animate-me animated-slide-right" style="display:flex; flex-wrap:wrap;">
                             <img class="padded-img" src="img/devices.png">
                         </div>
-                        <div class="col-lg-6 col-md-12 section-text">
+                        <div class="col-lg-6 col-md-12 section-text animate-me animated-slide-left">
                             <h2 class="headline">Results That Matter</h2>
                             <div>
                                 <p>A deep understanding of your business and the right solutions for it. This is what we bring to each engagement to drive results that matter.</p>
@@ -92,7 +95,7 @@
                                     <li><b>TOP TIER TALENT</b> &ndash; The best resources ready when you need them.</li>
                                     <li><b>15+ YEAR HISTORY</b> &ndash; Trusted partner for solving complex challenges.</li>
                                 </ul>
-                                <a class="cta-btn btn col-md-6 col-sm-12">Schedule a meeting</a>
+                                <button class="cta-btn btn col-md-6 col-sm-12" data-toggle="modal" data-target="#scheduleModal">Schedule a meeting</button>
                             </div>
                         </div>
                     </div>
@@ -151,13 +154,34 @@
                             Launchpad Developers<br/>
                             P.O. Box 12345
                             Louisville, KY 12345<br/><br/>
-                            <a href="mailto:introductions@launchpaddevelopers.com">Indtroductions@LaunchpadDevelopers.com</a>
+                            <span data-toggle="modal" style="text-decoration: underline;cursor:pointer;" data-target="#scheduleModal" href="mailto:introductions@launchpaddevelopers.com">Schedule a Meeting</a>
                         </p>
                     </div>
                     <div class="col-3 footer-links footer-links-1"></div>
                 </div>
             </div>
         </footer>
+        <!-- Modal -->
+        <div class="modal fade" id="scheduleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">SCHEDULE A MEETING</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+                Launchpad Developers uses MicroSoft Bookings for scheduling. Click continue set up a meeting.
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <a id="scheduleMeetingFirst" type="button" class="btn cta-btn" href="https://outlook.office365.com/owa/calendar/LaunchpadDevelopers@launchpaddevs.com/bookings/" target="_blank">Continue</a>
+                </div>
+            </div>
+            </div>
+        </div>
+        <script src="js/animate.js"></script>
     </body>
 </html>
 

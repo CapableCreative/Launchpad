@@ -1,7 +1,5 @@
 body, html {
     background: #000000;
-    height: 100vh;
-    width: 100%;
     padding: 0 0;
     margin: 0;
     font-size: 16px;
@@ -12,7 +10,6 @@ body, html {
 body {
     font-family: 'Montserrat', 'Helvetica Neue', Arial, Helvetica, sans-serif;
     position: relative;
-    scroll-snap-type: y mandatory;
 }
 b {
     font-weight: 900;
@@ -23,6 +20,7 @@ a {
 }
 img {
     max-width: 100%;
+    align-self: center;
 }
 .padded-img {
     padding: 20px;
@@ -114,13 +112,14 @@ nav {
     align-self: center;
     justify-self: center;
 }
-#nav nav > ul li > a{
+#nav nav > ul li > a, #nav nav ul li span{
     font-weight: 900;
     text-transform: uppercase;
     transition: all .20s ease .1s;
     border-bottom: none;
+    cursor: pointer;
 }
-#nav nav > ul li > a:hover {
+#nav nav > ul li > a:hover, #nav nav ul li span {
     border-bottom: 1px solid #FFDD5D;
     color: #FFDD5D;
     transition: all .20s;
@@ -156,6 +155,7 @@ nav {
     justify-content: center;
     border-bottom: 5px solid #FFDD5D;
     scroll-snap-align: start;
+    padding-top: 100px;
 }
 #homeFirstVP #hero {
     text-align: center;
@@ -281,6 +281,8 @@ footer {
     text-transform: uppercase;
     margin: 10px 0 0 0;
     transition: all .25s ease .25s;
+    background: #FFDD5D;
+    color: #5A94AD;
 }
 .btn:hover {
     background: #FFDD5D;
@@ -290,14 +292,14 @@ footer {
     background: #F9521D;
     color: #FFF;
 }
-.scnd-btn {
+.scnd-btn, .btn-secondary {
     background: #FFF;
     color: #5A94AD;
 }
 
 #clientsList {
     position: relative;
-    top: -6 0px;
+    top: -60px;
 }
 #iconsRow {
     border-bottom: 5px solid #FFDD5D;
@@ -328,6 +330,17 @@ footer p, footer a {
     color: #333;
     font-size: .75rem;
 }
+.modal-dialog {
+    position: absolute;
+    top: calc(50% - 200px);
+    right: calc(50% - 200px);
+  }
+  .modal-title {
+    font-weight: 900;
+  }
+  .modal-body {
+    font-weight: 500;
+  }
 /* ------ large screens --------- */
 @media screen and (min-width: 2100px) {
     body{
@@ -393,8 +406,8 @@ footer p, footer a {
         font-size: 3rem;
         line-height: 3rem;
     }
-    #homeFirstVP #hero h2 {
-        font-size: 1.5rem;
+    #homeFirstVP #hero h2, p, ul, li {
+        font-size: 1.25rem;
         line-height: 1.5rem;
     }
     #homeFirstVP #hero #heroIconRow {
@@ -431,10 +444,6 @@ footer p, footer a {
         font-size: 2.5rem;
         line-height: 3rem;
     }
-    #homeFirstVP #hero h2 {
-        font-size: 1rem;
-        line-height: 1.25rem;
-    }
     #homeFirstVP{
         background-size: cover;
         min-height: 100vh;
@@ -448,3 +457,41 @@ footer p, footer a {
         border-bottom: 5px solid #FFDD5D;
     }
 }
+
+.service-icon {
+    opacity: 1.0;
+    position: relative;
+    top: 0;
+    transition: all 2s ease .15s;
+}
+
+
+.service-icon.animated-icon {
+    opacity: 0.0;
+    position: relative;
+    top: 100px;
+    transition: all .2s ease .15s;
+}
+
+.animate-me {
+    opacity: 1.0;
+    position: relative;
+    left: 0;
+    transition: all 1.5s ease .15s;
+}
+
+.animate-me.animated-slide-right {
+    opacity: 0.0;
+    position: relative;
+    left: -50%;
+    transition: all 1.5s ease .15s;
+}
+
+.animate-me.animated-slide-left {
+    opacity: 0.0;
+    position: relative;
+    left: 50%;
+    transition: all 1.5s ease .15s;
+}
+
+
