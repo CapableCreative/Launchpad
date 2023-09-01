@@ -10,6 +10,10 @@ body, html {
 body {
     font-family: 'Montserrat', 'Helvetica Neue', Arial, Helvetica, sans-serif;
     position: relative;
+    opacity: 0.0;
+    background: #030E1F;
+    box-shadow: inset 0 0 100px rgba(0,0,0,0.8);
+    transition: opacity 1s ease .25s;
 }
 b {
     font-weight: 900;
@@ -106,6 +110,10 @@ nav {
     top: 20px;
     right: 20px;
 }
+#mainNavLinks li {
+    margin-left: 30px;
+    text-decoration: none;
+}
 
 #nav nav > ul li {
     display: flex;
@@ -119,9 +127,12 @@ nav {
     border-bottom: none;
     cursor: pointer;
 }
-#nav nav > ul li > a:hover, #nav nav ul li span {
-    border-bottom: 1px solid #FFDD5D;
+#nav nav ul li span {
     color: #FFDD5D;
+    transition: all .20s;
+}
+#nav nav ul li span:hover {
+    border-bottom: 1px solid #FFDD5D;
     transition: all .20s;
 }
 
@@ -341,7 +352,12 @@ footer p, footer a {
   .modal-body {
     font-weight: 500;
   }
-
+  .modal .btn {
+    width: 100%;
+  }
+  .modal-footer {
+    border-radius: 0 0 5px 5px;
+  }
   .service-icon {
     opacity: 1.0;
     position: relative;
@@ -377,8 +393,37 @@ footer p, footer a {
     left: 50%;
     transition: all 1.5s ease .15s;
 }
-
-
+.close {
+    font-size: 3rem;
+    line-height: 40px;
+    color: #999;
+}
+#contactSuccess h3 {
+    background: #4CBB17;
+    color: #FFF;
+    padding: 15px;
+    font-size: 20px;
+    border-radius: 5px;
+}
+#contact-form input, #contact-form label{
+    display: block;
+  }
+  input, textarea {
+    background: #f1f1f1;
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #999;
+    margin: 5px 0 10px;
+  }
+  textarea {
+    height: 100px;
+  }
+  label {
+    color: #999;
+    font-weight: 700;
+  }
 
 /* ------ large screens --------- */
 @media screen and (min-width: 2100px) {
