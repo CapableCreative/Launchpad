@@ -14,8 +14,6 @@ $(window).scroll(function (event) {
     var animatedRight = $('.animate-me.animated-slide-right');
     var animatedLeft = $('.animate-me.animated-slide-left');
 
-    console.log(animatedRight.length)
-
     for (let ar = 0; ar < $(animatedRight).length; ar++){
         var animatedPosition = $((animatedRight[ar])).offset().top
         console.log(scroll,animatedPosition)

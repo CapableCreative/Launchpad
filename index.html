@@ -20,11 +20,10 @@
         <script type="text/javascript">
             (function() {
                 // https://dashboard.emailjs.com/admin/account
-                emailjs.init('hBL2USjYMnlL7v0dN');
+                emailjs.init('xKax8S408sJOj61EW');
             })();
         </script>
         <script src="https://kit.fontawesome.com/b5ccb2b36d.js" crossorigin="anonymous"></script>
-        <script type="text/javascript" src="js/contact.js"></script>
     </head>
     <body>
         
@@ -46,7 +45,7 @@
                       <a class="nav-link" href="services.html" id="navbarDropdownMenuLink">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Let's Talk</a>
+                        <a class="nav-link" href="#" data-toggle="modal" data-target="#contactModal">Let's Talk</a>
                     </li>
                   </ul>
                 </div>
@@ -235,7 +234,7 @@
                         </div>
                         <div class="modal-footer">
                             <input id="contactSend" type="submit"  class="btn cta-btn" value="Send">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">DISMISS</button>
+                            <button id="dismissReset" type="button" class="btn btn-secondary" data-dismiss="modal">DISMISS</button>
                         </div>
                     </form>
                 </div>
@@ -261,6 +260,7 @@
             </div>
         </div>
         <script src="js/animate.js"></script>
+        <script type="text/javascript" src="js/contact.js"></script>
     </body>
 </html>
 

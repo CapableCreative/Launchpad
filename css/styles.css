@@ -26,6 +26,9 @@ img {
     max-width: 100%;
     align-self: center;
 }
+em {
+    font-style: italic;
+}
 .padded-img {
     padding: 20px;
 }
@@ -149,7 +152,7 @@ nav {
     transition: all .25s;
 }
 .section-text {
-    padding: 50px 0;
+    padding: 0px 0;
     justify-content: center;
     align-content: center;
     display: flex;
@@ -215,6 +218,7 @@ nav {
     color: #FFDD5D;
 }
 #homeSecondVPFirst{
+    padding-top: 50px;
     min-width: 100%;
     z-index: 2;
     position: relative;
@@ -441,6 +445,9 @@ footer p, footer a {
     min-height: calc(100vh - 1200px);
     background:  url('../img/honeycombBkgrd.png') #fafafa;
 }
+.page-content.alt-band {
+    background:  url('../img/honeycombBkgrd.png') #f1f1f1;
+}
 ul {
     list-style-type: disc;
 }
@@ -451,6 +458,7 @@ p {
     display: flex;
     align-self: center;
     margin-bottom: 0;
+    flex-direction: column;
 }
 .page-heading {
     margin-top: 100px;
@@ -458,12 +466,12 @@ p {
     background-size: contain;
     border-top: 5px solid #FFDD5D;
     color: #FFF;
+    padding: 50px 0;
 }
 .page-heading-img {
     text-align: center;
 }
 .page-heading-img img{
-    padding: 40px 0;
     width: 600px;
 }
 .page-heading h1{
@@ -481,14 +489,17 @@ p {
     line-height: 48px;
     text-transform: uppercase;
 } 
-.page-wrapper.services-page {
+.page-heading {
+    padding-top: 50px;
+}
+.page-wrapper {
     background: #FFFFFF;
 }
 .page-wrapper p, .page-wrapper h2, .page-wrapper h3, .page-wrapper ul {
 color: #000;
 line-height: 2rem;
 }
-.page-wrapper .heading-subtext p, .page-wrapper .heading-subtext h2, .page-wrapper h3 {
+.page-wrapper .heading-subtext p, .page-wrapper .heading-subtext h2, .page-wrapper .heading-subtext h3 {
     color: #FFF;
 }
 .service-page-section {
@@ -568,12 +579,27 @@ section.technologies {
     background: #FFDD5D;
     padding: 20px;
   }
-  .contact-bar p {
+  .contact-bar span {
     color: #333;
     font-weight: 700;
     font-size: 30px;
     text-align: center;
   }
+
+/* ------ CASE STUDIES ---------- */
+#caseStudiesHeading{
+    background: url(/img/caseStudy/csHeading.png) no-repeat center center #000;
+    background-size: cover;
+}
+.case-study-logo {
+    justify-content: center;
+    display: flex;
+    padding: 40px;
+  }
+.case-study-port img {
+    border-radius: 40px;
+    margin: 10px;
+}
 /* ------ large screens --------- */
 @media screen and (min-width: 2100px) {
     body{

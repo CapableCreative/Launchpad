@@ -4,7 +4,7 @@ window.onload = function() {
         // generate a five digit number for the contact_number variable
         this.contact_number.value = Math.random() * 100000 | 0;
         // these IDs from the previous steps
-        emailjs.sendForm('service_eqdgbxp', 'template_b7071ts', this)
+        emailjs.sendForm('service_y8tdj6b', 'template_ck00kvj', this)
             .then(function() {
                 console.log('SUCCESS!');
                 document.getElementById("contact-form").reset()
@@ -19,3 +19,6 @@ window.onload = function() {
             });
     });
 }
+$('#contactModal').on('hidden.bs.modal', function () {
+    $(this).find('form').trigger('reset');
+})
