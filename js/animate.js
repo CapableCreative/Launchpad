@@ -16,7 +16,7 @@ $(window).scroll(function (event) {
 
     for (let ar = 0; ar < $(animatedRight).length; ar++){
         var animatedPosition = $((animatedRight[ar])).offset().top
-        console.log(scroll,animatedPosition)
+        //console.log(scroll,animatedPosition)
         animatedPosition / 3 < scroll ?  $(animatedRight[ar]).removeClass('animated-slide-right').removeClass('animated-slide-left')  : "";
     }
 

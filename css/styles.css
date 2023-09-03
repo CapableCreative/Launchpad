@@ -600,6 +600,10 @@ section.technologies {
     border-radius: 40px;
     margin: 10px;
 }
+.navbar-toggler .navbar-toggler-icon {
+    color: #FFF;
+    font-size: 38px;
+}
 /* ------ large screens --------- */
 @media screen and (min-width: 2100px) {
     body{
@@ -678,6 +682,23 @@ section.technologies {
     .tab-img img {
         max-width: 220px !important;
         margin: 0 0;
+    }
+    .page-content img {
+        border-radius: 20px;
+        margin: 40px 0;
+    }
+    .navbar-collapse  {
+        text-align: center;
+        background: #000000;
+        border: 1px solid #FFF;
+        margin: 0 0 !important;
+        border-radius: 10px;
+    }
+    .navbar-collapse {
+
+    }
+    .navbar.navbar-expand-lg li a {
+        line-height: 50px;
     }
 }
 @media screen and (min-width: 800px) {
