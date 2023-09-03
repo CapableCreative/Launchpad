@@ -602,8 +602,13 @@ section.technologies {
 }
 .navbar-toggler .navbar-toggler-icon {
     color: #FFF;
-    font-size: 38px;
+    font-size: 30px;
+    text-align: right;
 }
+.case-studies-page h2 {
+    font-weight: 900;
+    font-size: 1.5rem;
+  }
 /* ------ large screens --------- */
 @media screen and (min-width: 2100px) {
     body{
@@ -640,6 +645,9 @@ section.technologies {
     #eeStaffAugmentation .tab-img {
         justify-content: left;
     }
+    #homeFirstVP #hero h2 {
+        font-size: 1.5rem;;
+    }
 }
 @media (min-width: 1400px){
     .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
@@ -663,6 +671,7 @@ section.technologies {
     footer {
         scroll-snap-align: none;
     }
+    
 }
 @media screen and (max-width: 1000px) {
     body {
@@ -685,7 +694,7 @@ section.technologies {
     }
     .page-content img {
         border-radius: 20px;
-        margin: 40px 0;
+        margin: 20px 0;
     }
     .navbar-collapse  {
         text-align: center;
@@ -693,12 +702,27 @@ section.technologies {
         border: 1px solid #FFF;
         margin: 0 0 !important;
         border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0,0,0,0.7)
     }
     .navbar-collapse {
 
     }
     .navbar.navbar-expand-lg li a {
         line-height: 50px;
+    }
+    .btn {
+        margin: 0 auto;
+        display: block;
+    }
+    h2.headline {
+        text-align: center;
+        font-size: 2rem;
+    }
+    p, ul, a {
+        font-size: 1.25rem;
+    }
+    .page-heading h1 {
+        font-size: 2rem;
     }
 }
 @media screen and (min-width: 800px) {
@@ -715,10 +739,6 @@ section.technologies {
     #homeFirstVP #hero h1 span.light-font {
         font-size: 3rem;
         line-height: 3rem;
-    }
-    #homeFirstVP #hero h2, p, ul, li {
-        font-size: 1.25rem;
-        line-height: 1.5rem;
     }
     #homeFirstVP #hero #heroIconRow {
         margin-top: 20px;
@@ -750,6 +770,17 @@ section.technologies {
     .page-heading-img img {
         padding: 0 0 40px;
     }
+    p, ul, a, .page-wrapper p, .page-wrapper h2, .page-wrapper h3, .page-wrapper ul {
+        font-size: 1rem;
+        line-height: 1.5rem;;
+    }
+    .contact-bar span {
+        font-size: 24px;
+    }
+    .case-studies-page h2 {
+        font-weight: 900;
+        font-size: 1.5rem;
+      }
 }
 /* ------- mobile screens --------- */
 @media screen and (max-width: 600px){
