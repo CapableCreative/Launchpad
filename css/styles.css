@@ -32,6 +32,9 @@ em {
 .padded-img {
     padding: 20px;
 }
+.br-10 {
+    border-radius: 10px;;
+}
 h2 {
     font-size: 30px;
     margin: 15px 0;
@@ -115,6 +118,9 @@ nav {
     text-transform: uppercase;
     font-weight: 700;
     
+}
+#nav a.active-link{
+    color: #FFF;
 }
 #nav{
     position: fixed;
@@ -552,7 +558,6 @@ text-align: center;
 width: 450px;
 }
 section.technologies {
-    mix-blend-mode: luminosity;
     padding: 30px;
     background: rgba(0,0,0,0.1);
   }
@@ -609,6 +614,69 @@ section.technologies {
     font-weight: 900;
     font-size: 1.5rem;
   }
+
+
+/* -- TECHNOLOGIES PAGE ----------- */
+.tech-cards {
+    justify-content: space-around;
+    padding: 40px 0;
+}
+
+.language-card {
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 10px;
+    background: #eaeaea;
+    text-align: center;
+}
+.language-card h3 {
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: #636E91;
+    font-weight: 700;
+    margin: 0 0;
+}
+.language-icon {
+    font-size: 48px; /* Adjust the size of the icons as needed */
+    margin-top: 10px; /* Add space between the icon and text */
+    color: #F9A61D;
+}
+.language-card .not-fa {
+    width: 36px;
+    margin: 10px;
+}
+.technologies.technologies-header {
+    mix-blend-mode: normal;
+}
+.technologies-header p {
+    text-align: center;
+    max-width: 800px;
+    display: block;
+    margin: 0 auto;
+}
+.technologies-header a, .technologies-header a:visited {
+    color: #636E91;
+    text-decoration: underline;
+}
+
+/* -- PRIVACY POLICY ------------ */
+#lp-pp {
+    margin: 140px auto 40px;
+    background: #f1f1f1;
+    padding: 40px;
+    border-radius: 10px;
+}
+#lp-pp h2 {
+    font-weight: 700;
+    text-transform: uppercase;
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid #000;
+    margin-bottom: 20px;
+}
+#lp-pp p, #lp-pp ul, #lp-pp a {
+    color: #333;
+}
 /* ------ large screens --------- */
 @media screen and (min-width: 2100px) {
     body{

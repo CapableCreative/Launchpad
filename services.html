@@ -12,6 +12,12 @@
         <link rel="stylesheet" type="text/css" href="css/reset.css" />
         <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" />
         <link rel="stylesheet" type="text/css" href="css/styles.css" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
         <meta name="viewport" content="width=device-width,initial-scale=1">
         <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
@@ -28,32 +34,35 @@
     </head>
     <body>
 
-<!-- MAIN NAV - START -->
-<section id="nav">
-    <nav class="navbar navbar-expand-lg">
-        <a class="navbar-brand" href="index.html" id="main-brand">
-            <img alt="Launchpad Developers: On Demand Tech Talent" src="svg/launchpad-logo.svg" />
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon">
-                <i class="fa-solid fa-bars"></i>
-              </span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav">
-            <li class="nav-item dropdown">
-              <a class="nav-link" href="services.html" id="navbarDropdownMenuLink">Services</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="case-studies.html">Case Study</a>
-              </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#" data-toggle="modal" data-target="#contactModal">Let's Talk</a>
-            </li>
-          </ul>
-        </div>
-    </nav>
-</section>
+        <!-- MAIN NAV - START -->
+        <section id="nav">
+            <nav class="navbar navbar-expand-lg">
+                <a class="navbar-brand" href="index.html" id="main-brand">
+                    <img alt="Launchpad Developers: On Demand Tech Talent" src="svg/launchpad-logo.svg" />
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon">
+                    <i class="fa-solid fa-bars"></i>
+                  </span>
+                </button>
+                <div class="collapse navbar-collapse">
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link active-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="technologies.html">Technologies</a>
+                      </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="case-studies.html">Case Study</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-toggle="modal" data-target="#contactModal">Let's Talk</a>
+                    </li>
+                  </ul>
+                </div>
+            </nav>
+        </section>
 <!-- MAIN NAV - END -->
 
 <!-- PAGE CONTENT - START -->        
@@ -83,11 +92,11 @@
                     <div class="container">
                         <div class="row">
                             <div class="tech-img col dsk-only"><img src="/img/tech/Angular.png" alt="AngularJS Development"></div>
-                            <div class="tech-img col"><img src="/img/tech/Xamarin.Droid_.png" alt="AngularJS Development"></div>
-                            <div class="tech-img col dsk-only"><img src="/img/tech/Xamarin.Forms_.png" alt="AngularJS Development"></div>
+                            <div class="tech-img col"><img src="/img/tech/react.png" alt="AngularJS Development"></div>
+                            <div class="tech-img col"><img src="/img/tech/aspnet.svg" alt="AngularJS Development"></div>
                             <div class="tech-img col"><img src="/img/tech/iOS.png" alt="AngularJS Development"></div>
-                            <div class="tech-img col dsk-only"><img src="/img/tech/Xamarin.Droid_.png" alt="AngularJS Development"></div>
                             <div class="tech-img col"><img src="/img/tech/maui.png" alt="Maui DotNet Development"></div>
+                            <a href="technologies.html" class="more-img col dsk-only"><img src="/img/tech/manyMore.png" alt="Is your technology need not listed? Click here to view a full list of supported technologies."></a>
                         </div>
                     </div>
                 </div>
@@ -129,7 +138,7 @@
                         <div class="tab-pane fade row" id="devOps" role="tabpanel" aria-labelledby="devOps-tab">
                             <div class="col-lg-6 col-sm-12 tab-text">
                                 <h2>Dev Ops</h2>
-                                <p>Our seasoned project managers ensure successful software project delivery. We excel in efficient planning, scheduling, and resource management, guaranteeing timely completion. Effective communication and coordination to align project goals seamlessly is our number one goal.</p>
+                                <p>Unlock the power of our expert engineers to supercharge your software development. Our team specializes in DevOps best practices, automating build, testing, and deployment pipelines to streamline your processes. With our engineers, you'll achieve accelerated time-to-market through continuous integration and continuous deployment (CI/CD).</p>
                             </div>
                             <div class="col-lg-6 col-sm-12 tab-img">
                                 <img class="services-page-icon" alt="Dev Ops" style="max-width:590px" src="/img/services/devOps.png" />
@@ -177,7 +186,6 @@
                                     <li>Cost-Effective Solution</li>
                                     <li>Effortless Scalability</li>
                                     <li>Cultural Fit</li>
-                                    <li>Effortless Scalability</li>
                                 </ul>
                             </div>                      
                         </div>
@@ -228,13 +236,16 @@
                         <a href="/services.html#projectManagement">Project Management</a><br/>
                         <a href="/services.html#devOps">Dev Ops</a><br/>
                         <a href="/services.html#eeStaffAugmentation">Eastern Europe Staff Augmentation</a>
+                        <br/>
+                        <a href="/privacyPolicy.html">Privacy Policy</a><br/>
                     </div>
                     <div class="col-md-3 footer-links footer-links-1">
                         <h3>Contact</h3>
                         <p>
                             Launchpad Developers<br/>
-                            P.O. Box 12345<br/>
-                            Louisville, KY 12345<br/><br/>
+                            839 Winchester Ave.<br/>
+                            Suite 220<br/>
+                            Martinsburg, WV 25401<br/>
                         </p>                          
                     </div>
                 </div>
