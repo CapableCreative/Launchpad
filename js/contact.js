@@ -16,7 +16,7 @@ window.onload = function() {
                 $(contactSuccess).fadeIn();
             }, function(error) {
                 console.log('FAILED...', error);
-                $("#contactWrap").prepend('<div class="error-box">There seems to be an issue with this contact form. Please email us directly at the link in the footer.</div>');
+                $("#contactWrap").prepend('<div class="error-box">There seems to be an issue with this contact form. Please email us directly at launch@launchpaddevs.com.</div>');
                 setTimeout(
                     () => {
                         $('#contactModal').modal('hide');
