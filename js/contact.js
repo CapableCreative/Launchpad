@@ -16,6 +16,13 @@ window.onload = function() {
                 $(contactSuccess).fadeIn();
             }, function(error) {
                 console.log('FAILED...', error);
+                $("#contactWrap").prepend('<div class="error-box">There seems to be an issue with this contact form. Please email us directly at the link in the footer.</div>');
+                setTimeout(
+                    () => {
+                        $('#contactModal').modal('hide');
+                        $(".error-box").remove()
+                    }, 5000
+                )
             });
     });
 }

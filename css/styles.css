@@ -428,7 +428,13 @@ footer p, footer a {
 }
 #contact-form input, #contact-form label{
     display: block;
-  }
+}
+.error-box {
+    background: #F9521D;
+    padding: 10px;
+    border-radius: 5px;
+    color: #FFF;
+}
   input, textarea {
     background: rgba(0,0,0,0.1);
     width: 100%;
