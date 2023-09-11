@@ -626,7 +626,7 @@ section.technologies {
     padding: 15px;
     margin: 15px 0;
     border-radius: 10px;
-    background: #eaeaea;
+    background: #f7f7f7;
     text-align: center;
 }
 .language-card h3 {
@@ -796,6 +796,9 @@ section.technologies {
     .page-heading h1 {
         font-size: 2rem;
     }
+    .modal .btn:first-child {
+        margin-bottom: 10px;
+      }
 }
 @media screen and (min-width: 800px) {
     .mbl-only {
@@ -853,6 +856,9 @@ section.technologies {
         font-weight: 900;
         font-size: 1.5rem;
       }
+      #homeFirstVP #hero h2 {
+        font-size: 1rem;
+      }
 }
 /* ------- mobile screens --------- */
 @media screen and (max-width: 600px){
@@ -863,8 +869,14 @@ section.technologies {
         max-width: 150px;
     }
     #homeFirstVP #hero h1 {
-        font-size: 4rem;
-        line-height: 3rem;
+        font-size: 3rem;
+        line-height: 2.5rem;
+    }
+    #homeFirstVP #hero h2 {
+        margin-bottom: 0px;
+    }
+    #homeFirstVP #hero #heroIconRow {
+        margin-top: 0px;
     }
     body, section, #homeFirstVP {
         height:fit-content;
