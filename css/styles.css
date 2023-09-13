@@ -200,7 +200,7 @@ nav {
     padding: 0 10px;
 }
 #homeFirstVP #hero #heroIconRow img{
-    max-width: 230px;
+    max-width: 220px;
     margin-top: 20px;
 }
 #homeFirstVP #hero h1 {
@@ -694,6 +694,9 @@ section.technologies {
         max-width: 180px;
         margin-top: 20px;
     }
+    #homeFirstVP #hero #heroIconRow img {
+        max-width: 200px;
+    }
     #myTabs {
         display: none;
     }
@@ -904,4 +907,22 @@ section.technologies {
         justify-content: center;
         border-bottom: 5px solid #FFDD5D;
     }
+    #homeFirstVPBkgrdVid{
+        display:none;
+    }
+    #iconsRow {
+        padding: 20px;
+        margin-top: 80px;
+      }
+    #iconsRow h2 {
+        font-size: 24px;
+        line-height: 36px;
+    }
+    .icons-row .client-icon {
+        height: 100px;
+        padding: 50px 30px 0;
+        opacity: 0.5;
+        max-width: 240px;
+        margin: 0 auto;
+      }
 }
